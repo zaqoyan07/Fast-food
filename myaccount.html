@@ -11,10 +11,10 @@
     <!-- Icons -->
     <link rel="stylesheet" type="text/css" href="libs/fontawesome/all.css">
     <link rel="icon" href="image/icons/logo.png">
-    <title>Fast Food | ՄԵՆՅՈՒ</title>
+    <title>Fast Food | ԳԼԽԱՎՈՐ</title>
   </head>
   <body>
-    <!-- header -->
+  	<!-- header -->
     <header id="up"class="container-fluid p-0 ">
       <!-- Navbar -->
       <nav class="row navbar navbar-expand-lg fixed-top navbar-dark nav-bg">
@@ -45,8 +45,8 @@
             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop-basket"><i class="fas fa-shopping-basket text-white pr-2 m-0 pt-1"></i><span class="badge badge-dark bg-dark">3</span></button>
           </div>
           <div class="nav-log-in d-flex justify-content-lg-center justify-content-md-start mt-lg-0 mt-md-3 mt-sm-3 mt-2">
-            <button type="button" class="btn btn-success mr-lg-3 mr-md-3 mr-sm-3 mr-2 ml-md-3 ml-3" data-toggle="modal" data-target="#staticBackdrop-signup">Գրանցում</button>
-            <button type="button" class="btn btn-danger text-white mr-2" data-toggle="modal" data-target="#staticBackdrop-login">Մուտք</button>
+            <a type="button" data-toggle="modal" data-target=".bd-example-modal-xl"><i class="fas fa-user-circle text-success ml-3"></i></a>
+            <a href="index.html"><button type="button" class="btn btn-danger mr-lg-3 mr-md-3 mr-sm-3 mr-2 ml-md-3 ml-3 text-white"><i class="fas fa-sign-out-alt m-0 pt-1"></i></button></a>
           </div>
         </div>
         <div class="tel-number d-flex justify-content-center mr-lg-4 ml-lg-0 mt-md-2 mt-sm-2 mt-2 mx-md-3 mx-3">
@@ -99,17 +99,50 @@
     </header>
     <!-- main -->
     <main class="container-fluid p-0">
-      <h1 class="main-header text-center text-danger p-5 m-0">ՄԵՆՅՈԻ</h1>
-      <div class="row manu-nav w-75 mx-auto my-4">
-        <a href="#barbecue" class="btn btn-danger rounded-0 d-flex align-items-center justify-content-center mx-3 mx-sm-1 col-lg col-md col-sm">ԽՈՐՈՎԱԾ</a>
-        <a href="#fast-food" class="btn btn-danger rounded-0 d-flex align-items-center justify-content-center mx-3 mx-sm-1 col-lg col-md col-sm">ԱՐԱԳ ՍՆՈՒՆԴ</a>
-        <a href="#hot-dish" class="btn btn-danger rounded-0 d-flex align-items-center justify-content-center mx-3 mx-sm-1 col-lg col-md col-sm">ՏԱՔ ՈՒՏԵՍՏ</a>
-        <a href="#drink" class="btn btn-danger rounded-0 d-flex align-items-center justify-content-center mx-3 mx-sm-1 col-lg col-md col-sm">ԸՄՊԵԼԻՔ</a>
+      <div>
+        <h1 class="main-header text-danger text-center p-5 m-0">ՄԻՇՏ ԹԱՐՄ ԵՎ ՀԱՄԵՂ</h1>
       </div>
-      <div class="container-sm mb-5 p-0 bg-white border-none main-pills-bg rounded">
-        <!-- barbecue -->
-        <div class="w-100 text-white-50 bg-dark p-3"><h3 id="barbecue" class="ml-5">ԽՈՐՈՎԱԾ</h3></div>
-        <div class="tab-pane p-0 m-0 text-center">
+      <div class="main-1-bg"></div>
+        <h1 class="main-header text-center text-danger p-5 m-0">ՄԵՆՅՈԻ</h1>
+        <section class="row w-100 p-lg-3 pb-md-2 m-0 m-lg-0 m-md-0 m-sm-0 pt-sm-5 d-flex justify-content-center nav nav-pills" id="pills-tab" role="tablist">
+          <a class="text-decoration-none text-danger main-menu-barbecue m-md-4 m-sm-4 m-4 col-lg col-md-4 col-sm-6 col-8 d-flex justify-content-center align-items-center" id="pills-barbecue-tab" data-toggle="pill" href="#pills-barbecue"  role="tab" aria-controls="pills-barbecue" aria-selected="true" ><h3>ԽՈՐՈՎԱԾ</h3></a>
+          <a class="text-decoration-none text-danger main-menu-fast-food m-md-4 m-sm-4 m-4 col-lg col-md-4 col-sm-6 col-8 d-flex justify-content-center align-items-center" id="pills-fast-food-tab" data-toggle="pill" href="#pills-fast-food" role="tab" aria-controls="pills-fast-food" aria-selected="true"><h3>ԱՐԱԳ ՍՆՈՒՆԴ</h3></a>
+          <a class="text-decoration-none text-danger main-menu-hot-dish m-md-4 m-sm-4 m-4 col-lg col-md-4 col-sm-6 col-8 d-flex justify-content-center align-items-center" id="pills-hot-dish-tab" data-toggle="pill" href="#pills-hot-dish" role="tab" aria-controls="pills-hot-dish" aria-selected="true"><h3>ՏԱՔ ՈՒՏԵՍՏ</h3></a>
+          <a class="text-decoration-none text-danger main-menu-drink m-md-4 m-sm-4 m-4 col-lg col-md-4 col-sm-6 col-8 d-flex justify-content-center align-items-center" id="pills-drink-tab" data-toggle="pill" href="#pills-drink" role="tab" aria-controls="pills-drink" aria-selected="true"><h3>ԸՄՊԵԼԻՔ</h3></a>
+      </section>
+      <div class="container-sm tab-content rounded p-lg-0 main-pills-bg col-lg-10" id="pills-tabContent">
+        <!-- Barbecue -->
+        <div class="row tab-pane fade p-1 m-0 mb-5 text-center" id="pills-barbecue" role="tabpanel" aria-labelledby="pills-barbecue-tab">
+          <div class="card border-0 d-lg-inline-block m-lg-4 mx-auto my-4 col-lg-5 col-md-11 col-sm-11 col-10">
+            <div class="row no-gutters">
+              <div class="col-md-5 col-sm-5 col-12">
+                <img src="image/barbecue.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7 col-sm-7 col-12">
+                <div class="card-body">
+                  <h5 class="card-title text-danger"><b>Խոզի խորոված</b></h5>
+                  <p class="card-text text-muted text-left">Տեղական Խոզի Միս, Լավաշ, Սոխ, Կանաչի, Կետչուպ, Մայոնեզ</p>
+                  <p class="card-text text-muted  text-left">Քաշը ՝ 200 Գր</p>
+                  <p class="card-text text-danger text-left d-flex justify-content-between align-items-center"><b>1000 Դ</b><a href="menu.html" class="btn btn-danger text-white" data-toggle="modal" data-target="#staticBackdrop-food">ԱՎԵԼԱՑՆԵԼ</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 d-lg-inline-block m-lg-4 mx-auto my-4 col-lg-5 col-md-11 col-sm-11 col-10">
+            <div class="row no-gutters">
+              <div class="col-md-5 col-sm-5 col-12">
+                <img src="image/barbecue.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7 col-sm-7 col-12">
+                <div class="card-body">
+                  <h5 class="card-title text-danger"><b>Խոզի խորոված</b></h5>
+                  <p class="card-text text-muted text-left">Տեղական Խոզի Միս, Լավաշ, Սոխ, Կանաչի, Կետչուպ, Մայոնեզ</p>
+                  <p class="card-text text-muted  text-left">Քաշը ՝ 200 Գր</p>
+                  <p class="card-text text-danger text-left d-flex justify-content-between align-items-center"><b>1000 Դ</b><a href="menu.html" class="btn btn-danger text-white" data-toggle="modal" data-target="#staticBackdrop-food">ԱՎԵԼԱՑՆԵԼ</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card border-0 d-lg-inline-block m-lg-4 mx-auto my-4 col-lg-5 col-md-11 col-sm-11 col-10">
             <div class="row no-gutters">
               <div class="col-md-5 col-sm-5 col-12">
@@ -142,8 +175,37 @@
           </div>
         </div>
         <!-- Fast-food -->
-        <div class="w-100 text-white-50 bg-dark p-3"><h3 id="fast-food" class="ml-5">ԱՐԱԳ ՍՆՈՒՆԴ</h3></div>
-        <div class="tab-pane p-0 m-0 text-center">
+        <div class="row tab-pane fade p-1 m-0 mb-5 text-center" id="pills-fast-food" role="tabpanel" aria-labelledby="pills-fast-food-tab">
+          <div class="card border-0 d-lg-inline-block m-lg-4 mx-auto my-4 col-lg-5 col-md-11 col-sm-11 col-10">
+            <div class="row no-gutters">
+              <div class="col-md-5 col-sm-5 col-12">
+                <img src="image/barbecue.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7 col-sm-7 col-12">
+                <div class="card-body">
+                  <h5 class="card-title text-danger"><b>Խոզի խորոված</b></h5>
+                  <p class="card-text text-muted text-left">Տեղական Խոզի Միս, Լավաշ, Սոխ, Կանաչի, Կետչուպ, Մայոնեզ</p>
+                  <p class="card-text text-muted  text-left">Քաշը ՝ 200 Գր</p>
+                  <p class="card-text text-danger text-left d-flex justify-content-between align-items-center"><b>1000 Դ</b><a href="menu.html" class="btn btn-danger text-white" data-toggle="modal" data-target="#staticBackdrop-food">ԱՎԵԼԱՑՆԵԼ</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 d-lg-inline-block m-lg-4 mx-auto my-4 col-lg-5 col-md-11 col-sm-11 col-10">
+            <div class="row no-gutters">
+              <div class="col-md-5 col-sm-5 col-12">
+                <img src="image/barbecue.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7 col-sm-7 col-12">
+                <div class="card-body">
+                  <h5 class="card-title text-danger"><b>Խոզի խորոված</b></h5>
+                  <p class="card-text text-muted text-left">Տեղական Խոզի Միս, Լավաշ, Սոխ, Կանաչի, Կետչուպ, Մայոնեզ</p>
+                  <p class="card-text text-muted  text-left">Քաշը ՝ 200 Գր</p>
+                  <p class="card-text text-danger text-left d-flex justify-content-between align-items-center"><b>1000 Դ</b><a href="menu.html" class="btn btn-danger text-white" data-toggle="modal" data-target="#staticBackdrop-food">ԱՎԵԼԱՑՆԵԼ</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card border-0 d-lg-inline-block m-lg-4 mx-auto my-4 col-lg-5 col-md-11 col-sm-11 col-10">
             <div class="row no-gutters">
               <div class="col-md-5 col-sm-5 col-12">
@@ -175,9 +237,8 @@
             </div>
           </div>
         </div>
-        <!-- Hot-dish -->
-        <div class="w-100 text-white-50 bg-dark p-3"><h3 id="hot-dish" class="ml-5">ՏԱՔ ՈՒՏԵՍՏ</h3></div>
-        <div class="tab-pane p-0 m-0 text-center">
+        <!-- Hot dish -->
+        <div class="row tab-pane fade p-1 m-0 mb-5 text-center" id="pills-hot-dish" role="tabpanel" aria-labelledby="pills-hot-dish-tab">
           <div class="card border-0 d-lg-inline-block m-lg-4 mx-auto my-4 col-lg-5 col-md-11 col-sm-11 col-10">
             <div class="row no-gutters">
               <div class="col-md-5 col-sm-5 col-12">
@@ -208,10 +269,60 @@
               </div>
             </div>
           </div>
+          <div class="card border-0 d-lg-inline-block m-lg-4 mx-auto my-4 col-lg-5 col-md-11 col-sm-11 col-10">
+            <div class="row no-gutters">
+              <div class="col-md-5 col-sm-5 col-12">
+                <img src="image/barbecue.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7 col-sm-7 col-12">
+                <div class="card-body">
+                  <h5 class="card-title text-danger"><b>Խոզի խորոված</b></h5>
+                  <p class="card-text text-muted text-left">Տեղական Խոզի Միս, Լավաշ, Սոխ, Կանաչի, Կետչուպ, Մայոնեզ</p>
+                  <p class="card-text text-muted  text-left">Քաշը ՝ 200 Գր</p>
+                  <p class="card-text text-danger text-left d-flex justify-content-between align-items-center"><b>1000 Դ</b><a href="menu.html" class="btn btn-danger text-white" data-toggle="modal" data-target="#staticBackdrop-food">ԱՎԵԼԱՑՆԵԼ</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 d-lg-inline-block m-lg-4 mx-auto my-4 col-lg-5 col-md-11 col-sm-11 col-10">
+            <div class="row no-gutters">
+              <div class="col-md-5 col-sm-5 col-12">
+                <img src="image/barbecue.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7 col-sm-7 col-12">
+                <div class="card-body">
+                  <h5 class="card-title text-danger"><b>Խոզի խորոված</b></h5>
+                  <p class="card-text text-muted text-left">Տեղական Խոզի Միս, Լավաշ, Սոխ, Կանաչի, Կետչուպ, Մայոնեզ</p>
+                  <p class="card-text text-muted  text-left">Քաշը ՝ 200 Գր</p>
+                  <p class="card-text text-danger text-left d-flex justify-content-between align-items-center"><b>1000 Դ</b><a href="menu.html" class="btn btn-danger text-white" data-toggle="modal" data-target="#staticBackdrop-food">ԱՎԵԼԱՑՆԵԼ</a></p>
+                </div>
+              </div>
+            </div>
+          </div>        
         </div>
-        <!-- drink -->
-        <div class="w-100 text-white-50 bg-dark p-3"><h3 id="drink" class="ml-5">ԸՄՊԵԼԻՔ</h3></div>
-        <div class="tab-pane p-0 m-0 text-center">
+        <!-- Drink -->
+        <div class="row tab-pane fade p-1 m-0 mb-5 text-center" id="pills-drink" role="tabpanel" aria-labelledby="pills-drink-tab">
+          <div class="card d-inline-block m-4 col-lg-3 col-md-5 col-sm-10 col-10">
+            <h4 class="card-title text-danger mb-1 mt-3">Card title</h4>
+            <img src="image/barbecue.jpg" class="card-img-top" alt="...">
+            <div class="card-body px-lg-2">
+              <p class="card-text text-danger text-left d-flex justify-content-between align-items-center"><b>1000 Դ</b><a href="menu.html" class="btn btn-danger text-white">ԱՎԵԼԱՑՆԵԼ</a></p>
+            </div>
+          </div>
+          <div class="card d-inline-block m-4 col-lg-3 col-md-5 col-sm-10 col-10">
+            <h4 class="card-title text-danger mb-1 mt-3">Card title</h4>
+            <img src="image/barbecue.jpg" class="card-img-top" alt="...">
+            <div class="card-body px-lg-2">
+              <p class="card-text text-danger text-left d-flex justify-content-between align-items-center"><b>1000 Դ</b><a href="menu.html" class="btn btn-danger text-white">ԱՎԵԼԱՑՆԵԼ</a></p>
+            </div>
+          </div>
+          <div class="card d-inline-block m-4 col-lg-3 col-md-5 col-sm-10 col-10">
+            <h4 class="card-title text-danger mb-1 mt-3">Card title</h4>
+            <img src="image/barbecue.jpg" class="card-img-top" alt="...">
+            <div class="card-body px-lg-2">
+              <p class="card-text text-danger text-left d-flex justify-content-between align-items-center"><b>1000 Դ</b><a href="menu.html" class="btn btn-danger text-white">ԱՎԵԼԱՑՆԵԼ</a></p>
+            </div>
+          </div>
           <div class="card d-inline-block m-4 col-lg-3 col-md-5 col-sm-10 col-10">
             <h4 class="card-title text-danger mb-1 mt-3">Card title</h4>
             <img src="image/barbecue.jpg" class="card-img-top" alt="...">
@@ -235,6 +346,43 @@
           </div>
         </div>
       </div>
+      <div class="text-center mb-5"><a href="menu.html" class="btn btn-danger text-white col-lg-2 col-md-4 col-sm-6 col-7">Տեսնել ավելին</a></div>
+      <div>
+        <h1 class="main-header text-danger text-center p-5 m-0">ՄԵՐ ՄԱՍԻՆ</h1>
+      </div>
+      <section class="row m-0 pt-5">
+        <div class="m-auto text-center text-white-50 main-about-us-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        </div>
+        <div class="card-columns py-5">
+          <div class="card">
+            <img src="image/main-img-1.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card">
+            <img src="image/main-img-2.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card">
+            <img src="image/main-img-3.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card">
+            <img src="image/main-img-4.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card">
+            <img src="image/main-img-5.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card">
+            <img src="image/main-img-6.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer -->
     <footer class="container-fluid w100 text-white">
@@ -346,11 +494,11 @@
           </div>
           <div class="modal-footer"> 
             <b class="text-dark modal-basket-footer-p mr-auto">Ընդամենը՝ xxxxx դրամ</b>
-            <button type="submit" class="btn btn-danger text-white  ml-1"><a href="order.html"class="dicoration">Պատվիրել</a></button>
+            <button type="submit" class="btn btn-danger text-white  ml-1">Պատվիրել</button>
           </div>
         </div>
       </div>
-    </div>          
+    </div>    
     <!-- log in modal -->
     <div class="modal fade" id="staticBackdrop-login"  tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog d-flex justify-content-center pt-lg-5 pt-md-5" role="document">
@@ -376,7 +524,7 @@
             </div>
           </div>
           <div class="modal-footer"> 
-            <button type="submit" class="btn btn-danger text-white mr-auto ml-3"><a href="myaccount.html"class="dicoration">Մուտք գործել</a></button>
+            <button type="submit" class="btn btn-danger text-white mr-auto ml-3">Մուտք գործել</button>
             <button type="button" class="btn btn-dark mr-4" data-dismiss="modal">Փակել</button>
           </div>
         </div>
@@ -419,12 +567,12 @@
             </div>
           </div>
           <div class="modal-footer"> 
-            <button type="submit" class="btn btn-success text-white mr-auto ml-3"><a href="myaccount.html" class="dicoration">Գրանցվել</a></button>
+            <button type="submit" class="btn btn-success text-white mr-auto ml-3">Գրանցվել</button>
             <button type="button" class="btn btn-dark mr-4" data-dismiss="modal">Փակել</button>
           </div>
         </div>
       </div>
-    </div>      
+    </div>    
     <!-- Modal menu -->
     <div class="modal fade p-0" id="staticBackdrop-food"  tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -472,16 +620,92 @@
             </div>
           </div>
           <div class="modal-footer"> 
-            <button type="submit" class="btn btn-danger text-white mr-auto ml-3" data-dismiss="modal">Ավելացնել Զամբյուղ</button>
+            <button type="submit" class="btn btn-danger text-white mr-auto ml-3">Ավելացնել Զամբյուղ</button>
             <button type="button" class="btn btn-dark mr-4" data-dismiss="modal">Փակել</button>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
+    <!-- My account -->
+    <div class="modal fade bd-example-modal-xl p-0" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger d-flex justify-content-start align-items-center" id="staticBackdropLabel"><i class="fas fa-user-circle text-danger mr-2"></i><b>Անուն Ազգանուն</b></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class=" modal-body">
+            <div class="row">
+              <div class="col-lg-3" >
+                <img src="image/account.jpg" class="w-100">
+                <div class="mt-3 pr-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link  active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Անձնական տվյալներ</a>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Իմ պատվերները</a>
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <div class="form-row">
+                        <div class="form-group col-lg-6">
+                          <label for="modalName">Անուն</label>
+                          <input type="text" class="form-control" id="modalName" value="Անուն">
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <label for="modalSurname">Ազգանուն</label>
+                          <input type="text" class="form-control" id="modalSurname" value="Ազգանուն">
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <label for="inputEmail4">Էլ.փոստ</label>
+                          <input type="email" class="form-control" id="inputEmail4" value="name@mail.ru">
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <label for="inputPassword4">Գաղտնաբառ</label>
+                          <input type="password" class="form-control" id="inputPassword4" value="12345678">
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <label for="inputAddress">Հասցե</label>
+                          <input type="text" class="form-control" id="inputAddress" value="Ք. Երևան, ...">
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <label for="inputCity">Հեռախոսահամար</label>
+                          <input type="text" class="form-control" id="inputCity" value="(+374)77 12 34 56">
+                        </div>
+                        <div class="d-flex justify-content-end mr-3 mt-3 w-100"><button type="submit" class="btn btn-danger">Հաստատել փոփոխությունները</button></div>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Up -->
     <a class="up" href="#up">
       <i class="fas fa-chevron-up"></i>
     </a>
+    <!-- main js -->
+    <script type="text/javascript">
+      $('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+    .card-columns {
+      @include media-breakpoint-only(lg) {
+        column-count: 4;
+      }
+      @include media-breakpoint-only(xl) {
+        column-count: 5;
+      }
+    }
     </script> 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
