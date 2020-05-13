@@ -109,7 +109,8 @@ body{
 }
 .main-about-us-text{
 	font-size: 18px;
-	width: 90%;
+	width: 100%;
+	margin: 0 200px;
 }
 .main-pills-bg{
 	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
@@ -288,6 +289,11 @@ a:hover{
 	}
 	.about-us-text{
 	font-size: 2vw;
+	}
+	.main-about-us-text{
+		font-size: 18px;
+		width: 100%;
+		margin: 0 30px;
 	}
 }
 
