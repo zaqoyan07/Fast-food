@@ -279,6 +279,10 @@ a:hover{
 	color:white!important;
 	background:#DC3545;
 }
+/*menu*/
+.menu-width-100{
+	width: 75%;
+}
 /*@media*/
 /*main*/
 @media only screen and (max-width: 990px) {
@@ -325,6 +329,9 @@ a:hover{
 	}
 	.about-us-text{
 	font-size: 18px;
+	}
+	.menu-width-100{
+		width: 100%;
 	}
 }
 
