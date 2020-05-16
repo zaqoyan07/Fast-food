@@ -2,6 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
+.menu-display{
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #DC3545;
